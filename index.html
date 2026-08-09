@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>My Love ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <button class="music-toggle" id="musicToggle">
+    ♪
+  </button>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <h1>My Love</h1>
+
+      <p class="hero-text">
+        Every second with you is my favorite.
+      </p>
+
+    </section>
+
+
+    <!-- COUNTER -->
+    <section class="glass-card counter-section">
+
+      <div class="small-heart">♡</div>
+
+      <h2>Together For</h2>
+
+      <div class="counter">
+
+        <div class="counter-item">
+          <span id="days">0</span>
+          <small>Days</small>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="counter-item">
+          <span id="hours">00</span>
+          <small>Hours</small>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="counter-item">
+          <span id="minutes">00</span>
+          <small>Minutes</small>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="counter-item">
+          <span id="seconds">00</span>
+          <small>Seconds</small>
+        </div>
+
+      </div>
+
+      <div class="heart-line">
+        <span></span>
+        ♡
+        <span></span>
+      </div>
+
+    </section>
+
+
+    <!-- LOVE MESSAGE -->
+    <section class="love-message glass-card">
+      <span class="message-heart">♥</span>
+
+      <p>
+        You are my today and all of my tomorrows.
+      </p>
+
+      <span class="message-heart">♥</span>
+    </section>
+
+
+    <!-- MEMORIES -->
+    <section class="memories">
+
+      <h2 class="section-title">
+        📷 Our Memories
+      </h2>
+
+      <div class="photo-grid">
+
+        <div class="polaroid rotate-left">
+          <div class="pin"></div>
+
+          <img src="photo1.jpg" alt="First Hello">
+
+          <p>
+            First Hello ♥
+          </p>
+        </div>
+
+
+        <div class="polaroid rotate-right">
+          <div class="pin"></div>
+
+          <img src="photo2.jpg" alt="First Date">
+
+          <p>
+            First Date ♥
+          </p>
+        </div>
+
+
+        <div class="polaroid rotate-left-small">
+          <div class="pin"></div>
+
+          <img src="photo3.jpg" alt="Special Moments">
+
+          <p>
+            Special Moments ♥
+          </p>
+        </div>
+
+
+        <div class="polaroid rotate-right-small">
+          <div class="pin"></div>
+
+          <img src="photo4.jpg" alt="Favorite Place">
+
+          <p>
+            My Favorite Place ♥
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INFO -->
+    <section class="glass-card info-card">
+
+      <div class="info-item">
+
+        <div class="info-icon">
+          ♡
+        </div>
+
+        <div>
+          <strong>Since</strong>
+
+          <p>
+            May 10, 2026
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="info-divider"></div>
+
+
+      <div class="info-item">
+
+        <div class="info-icon">
+          ◷
+        </div>
+
+        <div>
+          <strong>Days Together</strong>
+
+          <p>
+            <span id="daysTogether">0</span> Days
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="info-divider"></div>
+
+
+      <div class="info-item">
+
+        <div class="info-icon">
+          ∞
+        </div>
+
+        <div>
+          <strong>Forever</strong>
+
+          <p>
+            And always
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MUSIC -->
+    <section class="glass-card music-card">
+
+      <div class="album-cover">
+        <img src="photo2.jpg" alt="Our Song">
+      </div>
+
+      <div class="song-info">
+
+        <h3>
+          Our Song
+        </h3>
+
+        <p>
+          Adele — Lovesong ♡
+        </p>
+
+        <div class="progress-container">
+
+          <input
+            type="range"
+            id="progress"
+            min="0"
+            max="100"
+            value="0"
+          >
+
+        </div>
+
+        <div class="music-time">
+
+          <span id="currentTime">
+            0:00
+          </span>
+
+          <span id="duration">
+            0:00
+          </span>
+
+        </div>
+
+      </div>
+
+      <button
+        class="play-button"
+        id="playButton"
+      >
+        ▶
+      </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <p>
+        ♥ Thank you for being the best part of my life. ♥
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <audio
+    id="audio"
+    src="lovesong.mp3"
+    loop
+  ></audio>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
